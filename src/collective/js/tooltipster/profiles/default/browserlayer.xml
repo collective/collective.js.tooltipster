@@ -2,6 +2,6 @@
 <layers>
   <layer
     name="collective.js.tooltipster"
-    interface="collective.js.tooltipster.interfaces.ICollectiveJsTooltispterLayer"
+    interface="collective.js.tooltipster.interfaces.ICollectiveJsTooltipsterLayer"
   />
 </layers>

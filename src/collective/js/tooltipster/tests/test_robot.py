@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-from collective.js.iframeresizer.testing import COLLECTIVE_JS_IFRAMERESIZER_ACCEPTANCE_TESTING  # noqa
+from collective.js.tooltipster.testing import COLLECTIVE_JS_TOOLTIPSTER_ACCEPTANCE_TESTING  # noqa
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
 
@@ -22,7 +22,7 @@ def test_suite():
         suite.addTests([
             layered(
                 robottestsuite,
-                layer=COLLECTIVE_JS_IFRAMERESIZER_ACCEPTANCE_TESTING
+                layer=COLLECTIVE_JS_TOOLTIPSTER_ACCEPTANCE_TESTING
             ),
         ])
     return suite

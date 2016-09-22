@@ -17,6 +17,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:registerProfile
+        name="themes"
+        title="collective.js.tooltipster Themes"
+        directory="profiles/themes"
+        description="Installs the collective.js.tooltipster add-on."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
     <genericsetup:importStep
         name="collective.js.tooltipster-postInstall"
         title="collective.js.tooltipster post_install import step"

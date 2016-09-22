@@ -4,17 +4,17 @@
 #
 # Run this robot test stand-alone:
 #
-#  $ bin/test -s collective.js.iframeresizer -t test_example.robot --all
+#  $ bin/test -s collective.js.tooltipster -t test_example.robot --all
 #
 # Run this robot test with robot server (which is faster):
 #
 # 1) Start robot server:
 #
-# $ bin/robot-server --reload-path src collective.js.iframeresizer.testing.COLLECTIVE_JS_IFRAMERESIZER_ACCEPTANCE_TESTING
+# $ bin/robot-server --reload-path src collective.js.tooltipster.testing.COLLECTIVE_JS_TOOLTIPSTER_ACCEPTANCE_TESTING
 #
 # 2) Run robot tests:
 #
-# $ bin/robot src/collective/js/iframeresizer/tests/robot/test_example.robot
+# $ bin/robot src/collective/js/tooltipster/tests/robot/test_example.robot
 #
 # See the http://docs.plone.org for further details (search for robot
 # framework).
