@@ -19,7 +19,7 @@ long_description = (
 
 setup(
     name='collective.js.tooltipster',
-    version='0.3.dev0',
+    version='0.1.dev0',
     description="Plone integration of tooltipster jquery plugin",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -47,7 +47,6 @@ setup(
     extras_require={
         'test': [
             'plone.app.testing',
-            'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
         ],
     },
