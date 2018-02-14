@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2 (unreleased)
+1.0 (unreleased)
 ----------------
 
 - Moved to `tooltipster` 4.2.6.
