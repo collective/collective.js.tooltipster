@@ -11,5 +11,5 @@
              rendering="import"
              expression=""
              applyPrefix="1"
-             id="++resource++collective.js.tooltipster/tooltipster.css"/>
+             id="++resource++collective.js.tooltipster/tooltipster.bundle.min.css"/>
 </object>
