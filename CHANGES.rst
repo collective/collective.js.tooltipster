@@ -4,7 +4,10 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- In `tooltipster_helper`, set `updateAnimation` to `fade` by default,
+  moreover parameter `speed` does not exist anymore, it is replaced by
+ `animationDuration`.
+  [gbastien]
 
 
 1.0 (2018-02-14)

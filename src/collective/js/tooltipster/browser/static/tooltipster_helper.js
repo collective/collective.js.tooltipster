@@ -3,6 +3,7 @@ function tooltipster_helper(selector,
                             data_parameters={},
                             theme='tooltipster-shadow',
                             animation='fade',
+                            updateAnimation='fade',
                             trigger='hover') {
 
     jQuery(function($){
@@ -13,9 +14,10 @@ function tooltipster_helper(selector,
         interactive: true,
         theme: theme,
         position: 'bottom',
-        speed: 100,
+        animationDuration: 100,
         delay: 50,
         animation: animation,
+        updateAnimation: updateAnimation,
         trigger: trigger,
 
         functionBefore: function (instance, helper) {
