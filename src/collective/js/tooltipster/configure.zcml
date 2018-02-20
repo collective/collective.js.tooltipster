@@ -40,6 +40,10 @@
             title="Register new JS and remove old as names changed"
             description=""
             import_steps="jsregistry" />
+        <genericsetup:upgradeDepends
+            title="Register new CSS and remove old as names changed"
+            description=""
+            import_steps="cssregistry" />
         <genericsetup:upgradeStep
             title="Update themes CSS if necessary"
             handler="collective.js.tooltipster.upgrades.upgrade_to_2000"/>

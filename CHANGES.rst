@@ -8,6 +8,8 @@ Changelog
   moreover parameter `speed` does not exist anymore, it is replaced by
  `animationDuration`.
   [gbastien]
+- Bugfix upgrade to 2000 by re-applying the `cssregistry` step.
+  [gbastien]
 
 
 1.0 (2018-02-14)
