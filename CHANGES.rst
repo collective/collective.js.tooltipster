@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2018-02-20)
 ----------------
 
 - In `tooltipster_helper`, set `updateAnimation` to `fade` by default,
