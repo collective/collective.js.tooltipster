@@ -53,7 +53,6 @@ function tooltipster_helper(selector,
         }
     }
 
-
 });
 });
   
