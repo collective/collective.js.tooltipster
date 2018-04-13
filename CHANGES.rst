@@ -4,8 +4,10 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Added new optional parameters for `tooltipster_helper` : `zIndex` and
+  `functionReady_callback`, this last parameter is a JS function that will be
+  called in the `tooltipster.functionReady` function.
+  [gbastien]
 
 1.1 (2018-02-20)
 ----------------

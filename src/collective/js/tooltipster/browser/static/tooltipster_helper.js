@@ -1,24 +1,22 @@
 function tooltipster_helper(selector,
                             view_name,
-                            data_parameters={},
-                            theme='tooltipster-shadow',
-                            animation='fade',
-                            updateAnimation='fade',
-                            trigger='hover') {
+                            data_parameters=[],
+                            options={}) {
 
     jQuery(function($){
 
     $(selector).tooltipster({
+        zIndex: options.zIndex || 9999999,
         content: 'Loading...',
         contentAsHTML: true,
         interactive: true,
-        theme: theme,
-        position: 'bottom',
-        animationDuration: 100,
-        delay: 50,
-        animation: animation,
-        updateAnimation: updateAnimation,
-        trigger: trigger,
+        theme: options.theme || 'tooltipster-shadow',
+        position: options.position || 'bottom',
+        animationDuration: options.animationDuration || 100,
+        delay: options.delay || 50,
+        animation: options.animation || 'fade',
+        updateAnimation: options.updateAnimation || 'fade',
+        trigger: options.trigger || 'hover',
 
         functionBefore: function (instance, helper) {
             var $origin = $(helper.origin);
@@ -47,7 +45,15 @@ function tooltipster_helper(selector,
                 });
 
         }
+    },
+    functionReady: function (instance, helper) {
+        functionReady_callback = options.functionReady_callback || null;
+        if (options.functionReady_callback !== null) {
+            functionReady_callback();
+        }
     }
+
+
 });
 });
   
