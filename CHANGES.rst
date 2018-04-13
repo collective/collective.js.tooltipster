@@ -8,6 +8,9 @@ Changelog
   `functionReady_callback`, this last parameter is a JS function that will be
   called in the `tooltipster.functionReady` function.
   [gbastien]
+- Display `...` instead `Loading...` when loading the tooltipster so it is
+  compatible with every languages.
+  [gbastien]
 
 1.1 (2018-02-20)
 ----------------

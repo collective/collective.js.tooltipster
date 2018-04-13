@@ -7,7 +7,7 @@ function tooltipster_helper(selector,
 
     $(selector).tooltipster({
         zIndex: options.zIndex || 9999999,
-        content: 'Loading...',
+        content: "...",
         contentAsHTML: true,
         interactive: true,
         theme: options.theme || 'tooltipster-shadow',
