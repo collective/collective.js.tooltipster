@@ -17,6 +17,8 @@ function tooltipster_helper(selector,
         animation: options.animation || 'fade',
         updateAnimation: options.updateAnimation || 'fade',
         trigger: options.trigger || 'hover',
+        triggerOpen: options.triggerOpen || {},
+        triggerClose: options.triggerClose || {},
 
         functionBefore: function (instance, helper) {
             var $origin = $(helper.origin);
@@ -45,10 +47,14 @@ function tooltipster_helper(selector,
                 });
 
         }
+        close_other_tips = options.close_other_tips || null;
+        if (close_other_tips === true) {
+            $('.tooltipstered').tooltipster('close');
+        }
     },
     functionReady: function (instance, helper) {
         functionReady_callback = options.functionReady_callback || null;
-        if (options.functionReady_callback !== null) {
+        if (functionReady_callback != null) {
             functionReady_callback();
         }
     }

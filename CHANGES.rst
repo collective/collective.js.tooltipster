@@ -11,6 +11,11 @@ Changelog
 - Display `...` instead `Loading...` when loading the tooltipster so it is
   compatible with every languages.
   [gbastien]
+- Added new optional parameters for `tooltipster_helper` : `triggerOpen` and
+  `triggerClose` to use together with `trigger: 'custom'`.  Added also
+  optional parameter `close_other_tips` that if set to `true` will close every
+  other opened tooltips.
+  [gbastien]
 
 1.1 (2018-02-20)
 ----------------
