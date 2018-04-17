@@ -21,6 +21,13 @@ function tooltipster_helper(selector,
         triggerClose: options.triggerClose || {},
 
         functionBefore: function (instance, helper) {
+            // close every other tips if relevant
+            close_other_tips = options.close_other_tips || null;
+            if (close_other_tips === true) {
+                $('.tooltipstered').tooltipster('hide');
+            }
+
+            // manage new tooltispter
             var $origin = $(helper.origin);
             if ($origin.data('loaded') !== true) {
                 // data_parameters
@@ -46,10 +53,6 @@ function tooltipster_helper(selector,
                     }
                 });
 
-        }
-        close_other_tips = options.close_other_tips || null;
-        if (close_other_tips === true) {
-            $('.tooltipstered').tooltipster('close');
         }
     },
     functionReady: function (instance, helper) {
