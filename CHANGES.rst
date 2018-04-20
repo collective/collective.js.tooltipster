@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2 (unreleased)
+1.2 (2018-04-20)
 ----------------
 
 - Added new optional parameters for `tooltipster_helper` : `zIndex` and
