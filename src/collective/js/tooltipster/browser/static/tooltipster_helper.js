@@ -6,7 +6,8 @@ function tooltipster_helper(selector,
     jQuery(function($){
 
     $(selector).tooltipster({
-        zIndex: options.zIndex || 9999999,
+        // zIndex 9995 will make it work correctly with overlays
+        zIndex: options.zIndex || 9995,
         content: "...",
         contentAsHTML: true,
         interactive: true,
@@ -47,6 +48,8 @@ function tooltipster_helper(selector,
                     type: 'GET',
                     url: base_url + '/' + view_name,
                     data: parameters,
+                    // set async: false so content is loaded when functionReady is called
+                    async: false,
                     success: function (data) {
                         instance.content(data);
                         $origin.data('loaded', true);

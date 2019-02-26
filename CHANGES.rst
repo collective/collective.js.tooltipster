@@ -4,8 +4,12 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Set `async: false` for the JS ajax query so we are sure that content is loaded
+  when `functionReady` is called.
+  [gbastien]
+- Set default `zIndex` to `9995` so it behaves correctly with
+  `jQuery Tools` overlays.
+  [gbastien]
 
 1.2 (2018-04-20)
 ----------------
