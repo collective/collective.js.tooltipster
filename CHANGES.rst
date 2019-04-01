@@ -10,6 +10,9 @@ Changelog
 - Set default `zIndex` to `9995` so it behaves correctly with
   `jQuery Tools` overlays.
   [gbastien]
+- Take into account options `minWidth` and `maxWidth` when initializing
+  the tooltipster.
+  [gbastien]
 
 1.2 (2018-04-20)
 ----------------

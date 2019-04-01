@@ -20,6 +20,8 @@ function tooltipster_helper(selector,
         trigger: options.trigger || 'hover',
         triggerOpen: options.triggerOpen || {},
         triggerClose: options.triggerClose || {},
+        maxWidth: options.maxWidth || null,
+        minWidth: options.minWidth || 0,
 
         functionBefore: function (instance, helper) {
             // close every other tips if relevant
