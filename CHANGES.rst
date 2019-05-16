@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.3 (unreleased)
+1.3 (2019-05-16)
 ----------------
 
 - Set `async: false` for the JS ajax query so we are sure that content is loaded

@@ -11,7 +11,7 @@ long_description = (
 
 setup(
     name='collective.js.tooltipster',
-    version='1.3.dev0',
+    version='1.3',
     description="Plone integration of tooltipster jquery plugin",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
