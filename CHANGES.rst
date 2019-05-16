@@ -1,6 +1,7 @@
 Changelog
 =========
 
+
 1.3 (unreleased)
 ----------------
 
@@ -35,7 +36,7 @@ Changelog
 
 - In `tooltipster_helper`, set `updateAnimation` to `fade` by default,
   moreover parameter `speed` does not exist anymore, it is replaced by
- `animationDuration`.
+  `animationDuration`.
   [gbastien]
 - Bugfix upgrade to 2000 by re-applying the `cssregistry` step.
   [gbastien]
