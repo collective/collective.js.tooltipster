@@ -5,8 +5,11 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Set `async:true` for ajax request when no `functionReady_callback` provided.
+  [gbastien]
+- By default, make `click/tap/mouseenter` open a `tooltipster` and
+  `click/tap/mouseleave` close it. This makes it useable on mobile devices.
+  [gbastien]
 
 1.3 (2019-05-16)
 ----------------

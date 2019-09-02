@@ -13,17 +13,21 @@ function tooltipster_helper(selector,
         interactive: true,
         theme: options.theme || 'tooltipster-shadow',
         position: options.position || 'bottom',
+        trackTooltip: options.trackTooltip || false,
         animationDuration: options.animationDuration || 100,
         delay: options.delay || 50,
         animation: options.animation || 'fade',
         updateAnimation: options.updateAnimation || 'fade',
-        trigger: options.trigger || 'hover',
-        triggerOpen: options.triggerOpen || {},
-        triggerClose: options.triggerClose || {},
+        trigger: options.trigger || 'custom',
+        triggerOpen: options.triggerOpen || {mouseenter: true, click: true, tap: true},
+        triggerClose: options.triggerClose || {mouseleave: true, click: true, tap: true, },
         maxWidth: options.maxWidth || null,
         minWidth: options.minWidth || 0,
 
         functionBefore: function (instance, helper) {
+            // force async false if we have a functionReady_callback
+            async = !(options.functionReady_callback || null) && (options.async || true) || false;
+
             // close every other tips if relevant
             close_other_tips = options.close_other_tips || null;
             if (close_other_tips === true) {
@@ -51,7 +55,7 @@ function tooltipster_helper(selector,
                     url: base_url + '/' + view_name,
                     data: parameters,
                     // set async: false so content is loaded when functionReady is called
-                    async: false,
+                    async: async,
                     success: function (data) {
                         instance.content(data);
                         $origin.data('loaded', true);
