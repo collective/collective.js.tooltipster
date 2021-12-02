@@ -6,8 +6,8 @@ function tooltipster_helper(selector,
     jQuery(function($){
 
     $(selector).tooltipster({
-        // zIndex 9995 will make it work correctly with overlays
-        zIndex: options.zIndex || 9995,
+        // zIndex 11000 will make it work correctly with overlays
+        zIndex: options.zIndex || 11000,
         content: "...",
         contentAsHTML: true,
         interactive: true,

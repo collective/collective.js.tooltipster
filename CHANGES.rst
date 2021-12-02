@@ -5,8 +5,9 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Fixed default `zIndex` from `9995` to `11000` so it works correctly
+  when displayed in an overlay.
+  [gbastien]
 
 1.4 (2019-09-12)
 ----------------
