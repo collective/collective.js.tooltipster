@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.5 (unreleased)
+1.5 (2022-01-03)
 ----------------
 
 - Fixed default `zIndex` from `9995` to `11000` so it works correctly
