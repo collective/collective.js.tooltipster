@@ -23,6 +23,7 @@ function tooltipster_helper(selector,
         triggerClose: options.triggerClose || {mouseleave: true, click: true, tap: true, },
         maxWidth: options.maxWidth || null,
         minWidth: options.minWidth || 0,
+        passInstanceToCallback: options.passInstanceToCallback || false,
 
         functionBefore: function (instance, helper) {
             // force async false if we have a functionReady_callback
@@ -64,10 +65,12 @@ function tooltipster_helper(selector,
 
         }
     },
+
     functionReady: function (instance, helper) {
         functionReady_callback = options.functionReady_callback || null;
         if (functionReady_callback != null) {
-            functionReady_callback();
+            if (options.passInstanceToCallback) {functionReady_callback(instance);}
+            else {functionReady_callback();}
         }
     }
 

@@ -5,8 +5,9 @@ Changelog
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Added `passInstanceToCallback` option to be able to pass the tooltipster
+  instance to the `functionReady` callback.
+  [gbastien]
 
 1.5 (2022-01-03)
 ----------------
