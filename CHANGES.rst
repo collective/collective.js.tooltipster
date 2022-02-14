@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.6 (unreleased)
+1.6 (2022-02-14)
 ----------------
 
 - Added `passInstanceToCallback` option to be able to pass the tooltipster
