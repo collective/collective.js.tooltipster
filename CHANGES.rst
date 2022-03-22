@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.7 (unreleased)
+1.7 (2022-03-22)
 ----------------
 
 - Added new optional parameters for `tooltipster_helper` : `functionPosition_callback`,
