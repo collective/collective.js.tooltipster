@@ -5,8 +5,9 @@ Changelog
 1.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Added new optional parameters for `tooltipster_helper` : `functionPosition_callback`,
+  this let's manage tooltipster position manually.
+  [gbastien]
 
 1.6 (2022-02-14)
 ----------------

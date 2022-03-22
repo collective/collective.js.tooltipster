@@ -23,8 +23,9 @@ function tooltipster_helper(selector,
         triggerClose: options.triggerClose || {mouseleave: true, click: true, tap: true, },
         maxWidth: options.maxWidth || null,
         minWidth: options.minWidth || 0,
+        reposition: options.reposition || false,
+        positionTracker: options.positionTracker || false,
         passInstanceToCallback: options.passInstanceToCallback || false,
-
         functionBefore: function (instance, helper) {
             // force async false if we have a functionReady_callback
             async = !(options.functionReady_callback || null) && (options.async || true) || false;
@@ -72,7 +73,14 @@ function tooltipster_helper(selector,
             if (options.passInstanceToCallback) {functionReady_callback(instance);}
             else {functionReady_callback();}
         }
-    }
+    },
+
+    functionPosition: function (instance, helper, position) {
+        functionPosition_callback = options.functionPosition_callback || null;
+        if (functionPosition_callback != null) {
+            return functionPosition_callback(instance, helper, position);
+        }
+    },
 
 });
 });
