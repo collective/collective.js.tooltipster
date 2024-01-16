@@ -4,7 +4,6 @@ function tooltipster_helper(selector,
                             options={}) {
 
     jQuery(function($){
-
     $(selector).tooltipster({
         // zIndex 11000 will make it work correctly with overlays
         zIndex: options.zIndex || 11000,
@@ -12,6 +11,7 @@ function tooltipster_helper(selector,
         contentAsHTML: true,
         interactive: true,
         theme: options.theme || 'tooltipster-shadow',
+        arrow: options.arrow === undefined && true || options.arrow,
         position: options.position || 'bottom',
         trackTooltip: options.trackTooltip || false,
         animationDuration: options.animationDuration || 100,
@@ -84,5 +84,5 @@ function tooltipster_helper(selector,
 
 });
 });
-  
+
 }

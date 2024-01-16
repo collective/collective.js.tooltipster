@@ -5,8 +5,8 @@ Changelog
 1.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Added `arrow` option in `tooltipster_helper`.
+  [sgeulette]
 
 1.7 (2022-03-22)
 ----------------
