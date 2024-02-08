@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.8 (unreleased)
+1.8 (2024-02-08)
 ----------------
 
 - Added `arrow` option in `tooltipster_helper`.
