@@ -6,8 +6,6 @@
     i18n_domain="collective.js.tooltipster"
     >
 
-  <includeDependencies package="." />
-
   <include package=".browser" />
 
   <genericsetup:registerProfile
