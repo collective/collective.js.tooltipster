@@ -1,0 +1,23 @@
+name: Unit tests
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+      - synchronize
+  push:
+    branches:
+      - master
+    tags:
+      - '**'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on:
+      group: self-hosted
+    steps:
+      - name: test
+        uses: IMIO/gha/plone-package-test-notify@v4
+        with:
+          PYTHON_VERSION: ${{ vars.PYTHON_VERSION }}

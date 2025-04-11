@@ -16,6 +16,14 @@
         />
 
     <genericsetup:registerProfile
+        name="uninstall"
+        title="collective.js.tooltipster"
+        directory="profiles/uninstall"
+        description="Installs the collective.js.tooltipster add-on."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
         name="themes"
         title="collective.js.tooltipster Themes"
         directory="profiles/themes"
