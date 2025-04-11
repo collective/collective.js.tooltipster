@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.base"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.helper"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.borderlesstheme"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.lighttheme"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.noirtheme"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.punktheme"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+  <records prefix="plone.bundles/collective.js.tooltipster.shadowtheme"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           remove="True">
+  </records>
+
+</registry>
