@@ -8,6 +8,7 @@
 .settings/
 bin/
 buildout-cache/
+CACHEDIR.TAG
 develop-eggs/
 parts/
 src/*
