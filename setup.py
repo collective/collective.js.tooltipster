@@ -24,7 +24,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.10",
-        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.12",
     ],
     keywords='Python Plone',
     author='Gauthier BASTIEN',
