@@ -2,7 +2,7 @@
 collective.js.tooltipster
 =========================
    
-Plone integration of Tooltipster jQuery plugin (https://www.heteroclito.fr/modules/tooltipster/)
+Plone integration of Tooltipster jQuery plugin (https://calebjacob.github.io/tooltipster/)
 
 Version 4.2.6
 
