@@ -1,5 +1,6 @@
 function tooltipster_helper(selector,
                             view_name,
+                            view_content_selector,
                             data_parameters=[],
                             options={}) {
 
@@ -59,7 +60,12 @@ function tooltipster_helper(selector,
                     // set async: false so content is loaded when functionReady is called
                     async: async,
                     success: function (data) {
-                        instance.content(data);
+                        if (view_content_selector === undefined) {
+                            instance.content(data);
+                        }
+                        else {
+                            instance.content($(view_content_selector, data));
+                        }
                         $origin.data('loaded', true);
                     }
                 });

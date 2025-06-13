@@ -5,8 +5,8 @@ Changelog
 1.9 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Added Plone 6.1 version in buildout.
+  [chris-adam]
 
 1.8 (2024-02-08)
 ----------------
