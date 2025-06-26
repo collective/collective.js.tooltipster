@@ -17,6 +17,14 @@
       />
 
   <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.js.tooltipster"
+      description="Uninstalls the collective.js.tooltipster add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <genericsetup:registerProfile
       name="themes"
       title="collective.js.tooltipster Themes"
       description="Installs the collective.js.tooltipster add-on."
@@ -42,21 +50,10 @@
         description=""
         import_steps="jsregistry"
         />
-
-    <genericsetup:registerProfile
-        name="uninstall"
-        title="collective.js.tooltipster"
-        description="Installs the collective.js.tooltipster add-on."
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        directory="profiles/uninstall"
-        />
-
-    <genericsetup:registerProfile
-        name="themes"
-        title="collective.js.tooltipster Themes"
-        description="Installs the collective.js.tooltipster add-on."
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        directory="profiles/themes"
+    <genericsetup:upgradeDepends
+        title="Register new CSS and remove old as names changed"
+        description=""
+        import_steps="cssregistry"
         />
     <genericsetup:upgradeStep
         title="Update themes CSS if necessary"
