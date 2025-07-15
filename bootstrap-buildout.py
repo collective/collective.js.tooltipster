@@ -58,19 +58,10 @@ parser.add_option(
         "even if they are alphas or betas."
     ),
 )
+parser.add_option("-c", "--config-file", help=("Specify the path to the buildout configuration " "file to be used."))
+parser.add_option("-f", "--find-links", help=("Specify a URL to search for buildout releases"))
 parser.add_option(
-    "-c",
-    "--config-file",
-    help=("Specify the path to the buildout configuration " "file to be used."),
-)
-parser.add_option(
-    "-f", "--find-links", help=("Specify a URL to search for buildout releases")
-)
-parser.add_option(
-    "--allow-site-packages",
-    action="store_true",
-    default=False,
-    help=("Let bootstrap.py use existing site packages"),
+    "--allow-site-packages", action="store_true", default=False, help=("Let bootstrap.py use existing site packages")
 )
 parser.add_option("--setuptools-version", help="use a specific setuptools version")
 
@@ -124,22 +115,11 @@ for path in sys.path:
 
 ws = pkg_resources.working_set
 
-cmd = [
-    sys.executable,
-    "-c",
-    "from setuptools.command.easy_install import main; main()",
-    "-mZqNxd",
-    tmpeggs,
-]
+cmd = [sys.executable, "-c", "from setuptools.command.easy_install import main; main()", "-mZqNxd", tmpeggs]
 
 find_links = os.environ.get(
     "bootstrap-testing-find-links",
-    options.find_links
-    or (
-        "http://downloads.buildout.org/"
-        if options.accept_buildout_test_releases
-        else None
-    ),
+    options.find_links or ("http://downloads.buildout.org/" if options.accept_buildout_test_releases else None),
 )
 if find_links:
     cmd.extend(["-f", find_links])

@@ -5,9 +5,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-long_description = (
-    open("README.rst").read() + "\n\n" + open("CHANGES.rst").read() + "\n"
-)
+long_description = open("README.rst").read() + "\n\n" + open("CHANGES.rst").read() + "\n"
 
 
 setup(
