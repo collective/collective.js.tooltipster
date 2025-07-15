@@ -6,8 +6,6 @@
     i18n_domain="collective.js.tooltipster"
     >
 
-  <includeDependencies package="." />
-
   <include package=".browser" />
 
   <genericsetup:registerProfile
@@ -16,6 +14,14 @@
       description="Installs the collective.js.tooltipster add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.js.tooltipster"
+      description="Uninstalls the collective.js.tooltipster add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
       />
 
   <genericsetup:registerProfile
