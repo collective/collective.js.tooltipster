@@ -1,7 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <layers>
-  <layer
-    name="collective.js.tooltipster"
-    interface="collective.js.tooltipster.interfaces.ICollectiveJsTooltipsterLayer"
+  <layer interface="collective.js.tooltipster.interfaces.ICollectiveJsTooltipsterLayer"
+         name="collective.js.tooltipster"
   />
 </layers>
