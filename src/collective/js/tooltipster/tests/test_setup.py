@@ -13,20 +13,21 @@ class TestSetup(unittest.TestCase):
 
     def setUp(self):
         """Custom shared utility setup for tests."""
-        self.portal = self.layer['portal']
-        self.installer = api.portal.get_tool('portal_quickinstaller')
+        self.portal = self.layer["portal"]
+        self.installer = api.portal.get_tool("portal_quickinstaller")
 
     def test_product_installed(self):
         """Test if collective.js.tooltipster is installed with portal_quickinstaller."""
-        self.assertTrue(self.installer.isProductInstalled('collective.js.tooltipster'))
+        self.assertTrue(self.installer.isProductInstalled("collective.js.tooltipster"))
 
     def test_uninstall(self):
         """Test if collective.js.tooltipster is cleanly uninstalled."""
-        self.installer.uninstallProducts(['collective.js.tooltipster'])
-        self.assertFalse(self.installer.isProductInstalled('collective.js.tooltipster'))
+        self.installer.uninstallProducts(["collective.js.tooltipster"])
+        self.assertFalse(self.installer.isProductInstalled("collective.js.tooltipster"))
 
     def test_browserlayer(self):
         """Test that ICollectiveJsTooltipsterLayer is registered."""
         from collective.js.tooltipster.interfaces import ICollectiveJsTooltipsterLayer
         from plone.browserlayer import utils
+
         self.assertIn(ICollectiveJsTooltipsterLayer, utils.registered_layers())

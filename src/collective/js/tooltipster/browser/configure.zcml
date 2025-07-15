@@ -2,12 +2,13 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="collective.js.tooltipster">
+    i18n_domain="collective.js.tooltipster"
+    >
 
-    <!-- Publish static files -->
-    <browser:resourceDirectory
-        name="collective.js.tooltipster"
-        directory="static"
-        />
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+      name="collective.js.tooltipster"
+      directory="static"
+      />
 
 </configure>

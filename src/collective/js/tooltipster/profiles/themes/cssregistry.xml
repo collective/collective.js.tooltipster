@@ -1,57 +1,73 @@
-<?xml version="1.0"?>
-<object name="portal_css" meta_type="Stylesheets Registry">
+<?xml version="1.0" encoding="utf-8"?>
+<object meta_type="Stylesheets Registry"
+        name="portal_css"
+>
 
- <stylesheet remove="True" id="++resource++collective.js.tooltipster/tooltipster-light.css"/>
- <stylesheet remove="True" id="++resource++collective.js.tooltipster/tooltipster-noir.css"/>
- <stylesheet remove="True" id="++resource++collective.js.tooltipster/tooltipster-punk.css"/>
- <stylesheet remove="True" id="++resource++collective.js.tooltipster/tooltipster-shadow.css"/>
- <stylesheet remove="True" id="++resource++collective.js.tooltipster/tooltipster.css"/>
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-light.css"
+              remove="True"
+  />
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-noir.css"
+              remove="True"
+  />
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-punk.css"
+              remove="True"
+  />
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-shadow.css"
+              remove="True"
+  />
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster.css"
+              remove="True"
+  />
 
- <stylesheet title="collective.js.tooltipster light theme"
-             cacheable="True"
-             compression="safe"
-             cookable="True"
-             enabled="1"
-             media="all"
-             rel="stylesheet"
-             rendering="import"
-             expression=""
-             applyPrefix="1"
-             id="++resource++collective.js.tooltipster/tooltipster-sideTip-light.min.css"/>
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-sideTip-light.min.css"
+              applyPrefix="1"
+              cacheable="True"
+              compression="safe"
+              cookable="True"
+              enabled="1"
+              expression=""
+              media="all"
+              rel="stylesheet"
+              rendering="import"
+              title="collective.js.tooltipster light theme"
+  />
 
- <stylesheet title="collective.js.tooltipster noir theme"
-             cacheable="True"
-             compression="safe"
-             cookable="True"
-             enabled="1"
-             media="all"
-             rel="stylesheet"
-             rendering="import"
-             expression=""
-             applyPrefix="1"
-             id="++resource++collective.js.tooltipster/tooltipster-sideTip-noir.min.css"/>
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-sideTip-noir.min.css"
+              applyPrefix="1"
+              cacheable="True"
+              compression="safe"
+              cookable="True"
+              enabled="1"
+              expression=""
+              media="all"
+              rel="stylesheet"
+              rendering="import"
+              title="collective.js.tooltipster noir theme"
+  />
 
- <stylesheet title="collective.js.tooltipster punk theme"
-             cacheable="True"
-             compression="safe"
-             cookable="True"
-             enabled="1"
-             media="all"
-             rel="stylesheet"
-             rendering="import"
-             expression=""
-             applyPrefix="1"
-             id="++resource++collective.js.tooltipster/tooltipster-sideTip-punk.min.css"/>
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-sideTip-punk.min.css"
+              applyPrefix="1"
+              cacheable="True"
+              compression="safe"
+              cookable="True"
+              enabled="1"
+              expression=""
+              media="all"
+              rel="stylesheet"
+              rendering="import"
+              title="collective.js.tooltipster punk theme"
+  />
 
- <stylesheet title="collective.js.tooltipster shadow theme"
-             cacheable="True"
-             compression="safe"
-             cookable="True"
-             enabled="1"
-             media="all"
-             rel="stylesheet"
-             rendering="import"
-             expression=""
-             applyPrefix="1"
-             id="++resource++collective.js.tooltipster/tooltipster-sideTip-shadow.min.css"/>
+  <stylesheet id="++resource++collective.js.tooltipster/tooltipster-sideTip-shadow.min.css"
+              applyPrefix="1"
+              cacheable="True"
+              compression="safe"
+              cookable="True"
+              enabled="1"
+              expression=""
+              media="all"
+              rel="stylesheet"
+              rendering="import"
+              title="collective.js.tooltipster shadow theme"
+  />
 </object>
