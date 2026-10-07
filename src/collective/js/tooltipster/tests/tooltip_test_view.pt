@@ -1,0 +1,11 @@
+<div id="tt-test-content"
+     tal:define="delay request/form/delay|nothing;
+                 slept python:delay and __import__('time').sleep(float(delay))"
+>Hello
+  <span class="tt-name"
+        tal:content="request/form/name|string:nobody"
+  >name</span>
+  from
+  <span class="tt-title"
+        tal:content="context/Title"
+  >title</span></div>

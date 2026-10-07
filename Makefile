@@ -61,6 +61,18 @@ test: oneof-plone bin/buildout  ## run bin/test without robot
 	# can be run by example with: make test opt='-t "settings"'
 	bin/test -t \!robot ${opt}
 
+.PHONY: robot
+robot: oneof-plone bin/buildout  ## run robot tests in headless firefox
+	# opt -t filters are ORed with -t robot: run one scenario with MOZ_HEADLESS=1 bin/test --all -t "loaded once"
+	MOZ_HEADLESS=1 bin/test --all -t robot ${opt}
+
+.PHONY: robot-server
+robot-server:  ## Starts robot server (layer=<layer name in testing.py>, default COLLECTIVE_JS_TOOLTIPSTER_ACCEPTANCE_TESTING)
+	# run a robot file against it with: bin/robot -v PLONE_MAJOR:$(firstword $(subst ., ,$(plone))) src/collective/js/tooltipster/tests/robot/test_tooltipster.robot
+	# (no isolation between tests there: every test creates the same "doc", run one test at a time with -t)
+	# --no-reload: the reload watchdog restarts the server when a template is read
+	env ZSERVER_HOST=localhost ZSERVER_PORT=$(or $(ZSERVER_PORT),55001) bin/robot-server --no-reload -v collective.js.tooltipster.testing.$(or $(layer),COLLECTIVE_JS_TOOLTIPSTER_ACCEPTANCE_TESTING)
+
 .PHONY: cleanall
 cleanall:  ## Cleans all installed buildout files
 	rm -fr bin include lib local share develop-eggs downloads eggs parts .installed.cfg .mr.developer.cfg .python-version pyvenv.cfg
