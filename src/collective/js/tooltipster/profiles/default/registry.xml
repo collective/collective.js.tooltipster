@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <registry>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.base"
   >
     <value key="enabled">True</value>
@@ -12,7 +12,7 @@
     <value key="load_defer">False</value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.helper"
   >
     <value key="enabled">True</value>
@@ -22,7 +22,7 @@
     <value key="load_defer">False</value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.borderlesstheme"
   >
     <value key="enabled">True</value>
@@ -32,7 +32,7 @@
     <value key="load_defer">False</value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.lighttheme"
   >
     <value key="enabled">True</value>
@@ -42,7 +42,7 @@
     <value key="load_defer">False</value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.noirtheme"
   >
     <value key="enabled">True</value>
@@ -52,7 +52,7 @@
     <value key="load_defer">False</value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.punktheme"
   >
     <value key="enabled">True</value>
@@ -62,7 +62,7 @@
     <value key="load_defer">False</value>
   </records>
 
-  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+  <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/collective.js.tooltipster.shadowtheme"
   >
     <value key="enabled">True</value>

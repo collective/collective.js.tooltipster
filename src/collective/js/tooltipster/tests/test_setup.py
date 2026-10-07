@@ -2,10 +2,10 @@
 """Setup tests for this package."""
 from collective.js.tooltipster.interfaces import ICollectiveJsTooltipsterLayer
 from collective.js.tooltipster.testing import COLLECTIVE_JS_TOOLTIPSTER_INTEGRATION_TESTING  # noqa
+from plone.base.interfaces import IBundleRegistry
+from plone.base.utils import get_installer
 from plone.browserlayer import utils
 from plone.registry.interfaces import IRegistry
-from Products.CMFPlone.interfaces import IBundleRegistry
-from Products.CMFPlone.utils import get_installer
 from zope.component import getUtility
 
 import unittest
@@ -31,7 +31,7 @@ class TestSetup(unittest.TestCase):
         return {name: bundle for name, bundle in bundles.items() if name.startswith("collective.js.tooltipster.")}
 
     def test_product_installed(self):
-        """Test if collective.js.tooltipster is installed with portal_quickinstaller."""
+        """Test if collective.js.tooltipster is installed."""
         self.assertTrue(self.installer.is_product_installed("collective.js.tooltipster"))
 
     def test_static_files(self):

@@ -7,6 +7,13 @@ Changelog
 
 - Added Plone 6.1 version in buildout.
   [chris-adam]
+- Plone 6.2 support. Removed the Plone 4 `themes` profile and upgrade step
+  (themes are bundles of the default profile).
+  [chris-adam]
+- `tooltipster_helper`: `view_content_selector` moved into `options` (the 3rd
+  positional parameter is `data_parameters` again, as callers expect), and the
+  view is called on the context URL (`data-base-url`) when there is no `data-base_url`.
+  [chris-adam]
 
 1.8 (2024-02-08)
 ----------------

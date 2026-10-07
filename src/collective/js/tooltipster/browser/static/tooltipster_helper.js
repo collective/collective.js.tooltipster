@@ -1,6 +1,5 @@
 function tooltipster_helper(selector,
                             view_name,
-                            view_content_selector,
                             data_parameters=[],
                             options={}) {
 
@@ -49,7 +48,8 @@ function tooltipster_helper(selector,
                 // base_url
                 var base_url = $($origin).attr('data-base_url');
                 if (!base_url) {
-                  base_url = document.baseURI;
+                  // Plone 6 has no <base> tag: data-base-url of body is the context URL
+                  base_url = document.body.dataset.baseUrl || document.baseURI;
                 }
                 parameters.ajax_load = new Date().getTime();
 
@@ -60,11 +60,11 @@ function tooltipster_helper(selector,
                     // set async: false so content is loaded when functionReady is called
                     async: async,
                     success: function (data) {
-                        if (view_content_selector === undefined) {
+                        if (options.view_content_selector === undefined) {
                             instance.content(data);
                         }
                         else {
-                            instance.content($(view_content_selector, data));
+                            instance.content($(options.view_content_selector, data));
                         }
                         $origin.data('loaded', true);
                     }
