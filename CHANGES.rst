@@ -5,6 +5,9 @@ Changelog
 2.0.0 (unreleased)
 ------------------
 
+- Migrated to Plone 6.2 / Python 3, based on the work started on `plone61`
+  by @chris-adam and @laulaz.
+  [laulaz, chris-adam]
 - Added Plone 6.1 version in buildout.
   [chris-adam]
 - Plone 6.2 support. Removed the Plone 4 `themes` profile and upgrade step
