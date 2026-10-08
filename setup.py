@@ -10,7 +10,7 @@ long_description = open("README.rst").read() + "\n\n" + open("CHANGES.rst").read
 
 setup(
     name="collective.js.tooltipster",
-    version="1.9.dev0",
+    version="2.0.0.dev0",
     description="Plone integration of tooltipster jquery plugin",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers

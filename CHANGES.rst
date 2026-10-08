@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.9 (unreleased)
-----------------
+2.0.0 (unreleased)
+------------------
 
 - Added Plone 6.1 version in buildout.
   [chris-adam]
