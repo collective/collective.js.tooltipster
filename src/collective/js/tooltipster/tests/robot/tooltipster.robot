@@ -46,8 +46,8 @@ Change the data-name of the target
 
 Call the tooltipster helper
     [Documentation]  Plone 4 positional order. data_parameters and options are JS literals.
-    [Arguments]  ${id}  ${data_parameters}=['name']  ${options}={}
-    Execute javascript  tooltipster_helper('[id="${id}"]', '${VIEW_NAME}', ${data_parameters}, ${options});
+    [Arguments]  ${id}  ${data_parameters}=['name']  ${options}={}  ${view_name}=${VIEW_NAME}
+    Execute javascript  tooltipster_helper('[id="${id}"]', '${view_name}', ${data_parameters}, ${options});
 
 Hover the target
     [Arguments]  ${id}
@@ -72,6 +72,12 @@ The tooltip still shows after a while
     [Arguments]  ${text}
     Sleep  1s
     The tooltip shows  ${text}
+
+The tooltip shows the page without the site layout
+    [Documentation]  Page of the site loaded with ajax_load: its title, no portal header
+    [Arguments]  ${title}
+    Wait until element contains  css=.tooltipster-base h1  ${title}
+    Page should not contain element  css=.tooltipster-base #portal-header
 
 Every tooltip is closed
     Wait until page does not contain element  ${TOOLTIP}

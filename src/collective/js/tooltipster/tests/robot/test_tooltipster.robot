@@ -34,6 +34,12 @@ Without data-base_url on a page opened with its view URL
     Hover the target  bob
     The tooltip on a page opened with its view URL shows  ${DOC_TITLE}  Hello Bob from ${DOC_TITLE}
 
+A page of the site is loaded without the site layout
+    Add a tooltip target  alice  Alice  base_url=${DOC_URL}
+    Call the tooltipster helper  alice  view_name=view
+    Hover the target  alice
+    The tooltip shows the page without the site layout  ${DOC_TITLE}
+
 The content of the view is loaded once per element
     Add a tooltip target  alice  Alice  base_url=${DOC_URL}
     Call the tooltipster helper  alice

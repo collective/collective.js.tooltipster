@@ -17,6 +17,8 @@ Changelog
   positional parameter is `data_parameters` again, as callers expect), and the
   view is called on the context URL (`data-base-url`) when there is no `data-base_url`.
   [chris-adam]
+- `tooltipster_helper`: send `ajax_load=1` (Plone 6 rendered the whole page for a timestamp).
+  [chris-adam]
 
 1.8 (2024-02-08)
 ----------------
