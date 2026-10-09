@@ -6,8 +6,6 @@
     i18n_domain="collective.js.tooltipster"
     >
 
-  <includeDependencies package="." />
-
   <include package=".browser" />
 
   <genericsetup:registerProfile
@@ -19,11 +17,11 @@
       />
 
   <genericsetup:registerProfile
-      name="themes"
-      title="collective.js.tooltipster Themes"
-      description="Installs the collective.js.tooltipster add-on."
+      name="uninstall"
+      title="collective.js.tooltipster"
+      description="Uninstalls the collective.js.tooltipster add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      directory="profiles/themes"
+      directory="profiles/uninstall"
       />
 
   <genericsetup:importStep
@@ -33,26 +31,5 @@
       handler=".setuphandlers.post_install"
       >
 </genericsetup:importStep>
-
-  <genericsetup:upgradeSteps
-      profile="collective.js.tooltipster:default"
-      source="1000"
-      destination="2000"
-      >
-    <genericsetup:upgradeDepends
-        title="Register new JS and remove old as names changed"
-        description=""
-        import_steps="jsregistry"
-        />
-    <genericsetup:upgradeDepends
-        title="Register new CSS and remove old as names changed"
-        description=""
-        import_steps="cssregistry"
-        />
-    <genericsetup:upgradeStep
-        title="Update themes CSS if necessary"
-        handler="collective.js.tooltipster.upgrades.upgrade_to_2000"
-        />
-  </genericsetup:upgradeSteps>
 
 </configure>

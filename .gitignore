@@ -8,6 +8,7 @@
 .settings/
 bin/
 buildout-cache/
+CACHEDIR.TAG
 develop-eggs/
 parts/
 src/*
@@ -19,6 +20,9 @@ htmlcov/
 output.xml
 *.swp
 lib/
+.plone-version
+.python-version
+pyvenv.cfg
 include/
 temp_auto_push.bat
 temp_interactive_push.bat

@@ -2,11 +2,23 @@ Changelog
 =========
 
 
-1.9 (unreleased)
-----------------
+2.0.0 (unreleased)
+------------------
 
-- Nothing changed yet.
-
+- Migrated to Plone 6.2 / Python 3, based on the work started on `plone61`
+  by @chris-adam and @laulaz.
+  [laulaz, chris-adam]
+- Added Plone 6.1 version in buildout.
+  [chris-adam]
+- Plone 6.2 support. Removed the Plone 4 `themes` profile and upgrade step
+  (themes are bundles of the default profile).
+  [chris-adam]
+- `tooltipster_helper`: `view_content_selector` moved into `options` (the 3rd
+  positional parameter is `data_parameters` again, as callers expect), and the
+  view is called on the context URL (`data-base-url`) when there is no `data-base_url`.
+  [chris-adam]
+- `tooltipster_helper`: send `ajax_load=1` (Plone 6 rendered the whole page for a timestamp).
+  [chris-adam]
 
 1.8 (2024-02-08)
 ----------------
