@@ -19,6 +19,8 @@ Changelog
   [chris-adam]
 - `tooltipster_helper`: send `ajax_load=1` (Plone 6 rendered the whole page for a timestamp).
   [chris-adam]
+- Added plone.meta configuration (tox, pre-commit, GitHub Actions).
+  [chris-adam]
 
 1.8 (2024-02-08)
 ----------------
@@ -53,7 +55,7 @@ Changelog
 - Set `async:true` for ajax request when no `functionReady_callback` provided.
   [gbastien]
 - By default, make `click/tap/mouseenter` open a `tooltipster` and
-  `click/tap/mouseleave` close it. This makes it useable on mobile devices.
+  `click/tap/mouseleave` close it. This makes it usable on mobile devices.
   [gbastien]
 
 1.3 (2019-05-16)

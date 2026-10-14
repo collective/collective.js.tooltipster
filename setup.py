@@ -1,11 +1,11 @@
-# -*- coding: utf-8 -*-
 """Installer for the collective.js.tooltipster package."""
 
 from setuptools import find_packages
 from setuptools import setup
 
-
-long_description = open("README.rst").read() + "\n\n" + open("CHANGES.rst").read() + "\n"
+long_description = (
+    open("README.rst").read() + "\n\n" + open("CHANGES.rst").read() + "\n"
+)
 
 
 setup(
@@ -24,7 +24,10 @@ setup(
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
     ],
     keywords="Python Plone",
     author="Gauthier BASTIEN",
@@ -37,13 +40,20 @@ setup(
     zip_safe=False,
     python_requires=">=3.10",
     install_requires=[
-        "plone.api",
-        "setuptools",
+        "Products.GenericSetup",
+        "zope.i18nmessageid",
+        "zope.publisher",
     ],
     extras_require={
         "test": [
-            "plone.app.testing",
             "plone.app.robotframework[debug]",
+            "plone.app.testing",
+            "plone.base",
+            "plone.browserlayer",
+            "plone.registry",
+            "plone.testing",
+            "robotsuite",
+            "zope.component",
         ],
     },
     entry_points="""

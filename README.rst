@@ -1,3 +1,6 @@
+.. image:: https://github.com/collective/collective.js.tooltipster/actions/workflows/meta.yml/badge.svg?branch=master
+    :target: https://github.com/collective/collective.js.tooltipster/actions/workflows/meta.yml
+
 =========================
 collective.js.tooltipster
 =========================
