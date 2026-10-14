@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
-
-
 def isNotCurrentProfile(context, marker="marker"):
-    filename = "collectivejstooltipster_{}.txt".format(marker)
+    filename = f"collectivejstooltipster_{marker}.txt"
     return context.readDataFile(filename) is None
 
 

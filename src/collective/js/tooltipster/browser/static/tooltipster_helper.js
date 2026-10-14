@@ -48,18 +48,27 @@ function tooltipster_helper(selector,
                 // base_url
                 var base_url = $($origin).attr('data-base_url');
                 if (!base_url) {
-                  base_url = document.baseURI;
+                  // Plone 6 has no <base> tag: data-base-url of body is the context URL
+                  base_url = document.body.dataset.baseUrl || document.baseURI;
                 }
-                parameters.ajax_load = new Date().getTime();
+                // Plone 6 only takes "1"/"true"/... as true (a timestamp renders the whole page)
+                parameters.ajax_load = 1;
 
                 $.ajax({
                     type: 'GET',
                     url: base_url + '/' + view_name,
                     data: parameters,
+                    // cache busting (the timestamp of ajax_load did it): adds _=<timestamp>
+                    cache: false,
                     // set async: false so content is loaded when functionReady is called
                     async: async,
                     success: function (data) {
-                        instance.content(data);
+                        if (options.view_content_selector === undefined) {
+                            instance.content(data);
+                        }
+                        else {
+                            instance.content($(options.view_content_selector, data));
+                        }
                         $origin.data('loaded', true);
                     }
                 });

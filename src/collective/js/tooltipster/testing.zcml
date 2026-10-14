@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
@@ -23,5 +24,14 @@
       handler=".setuphandlers.test_fixture"
       >
 </genericsetup:importStep>
+
+  <!-- Test-only snippet loaded by the robot tooltips: context title and "name" parameter.
+       "delay" (seconds) slows the answer down. -->
+  <browser:page
+      name="tooltipster-test-view"
+      for="*"
+      template="tests/tooltip_test_view.pt"
+      permission="zope2.View"
+      />
 
 </configure>
