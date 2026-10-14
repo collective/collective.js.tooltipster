@@ -1,6 +1,5 @@
 """Installer for the collective.js.tooltipster package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 long_description = (
@@ -34,8 +33,6 @@ setup(
     author_email="gauthier.bastien@imio.be",
     url="http://pypi.python.org/pypi/collective.js.tooltipster",
     license="GPL",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
     python_requires=">=3.10",

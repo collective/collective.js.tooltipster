@@ -21,9 +21,3 @@ report.html
 
 [tox]
 test_matrix = {"6.3" = ["*"], "6.2" = ["*"], "6.1" = ["*"], "6.0" = ["3.13", "3.12", "3.11", "3.10"]}
-# Plone 6.1 pins collective.monkeypatcher 2.0.1, whose collective-nspkg.pth hides the
-# editable pkgutil src/collective from zope.testrunner 8: remove that .pth there.
-testenv_options = """
-commands_pre =
-    plone61: python -c "import glob, os, sysconfig; [os.remove(p) for p in glob.glob(os.path.join(sysconfig.get_path('purelib'), 'collective.*-nspkg.pth'))]"
-"""
