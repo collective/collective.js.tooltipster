@@ -17,8 +17,6 @@ setup(
         "Development Status :: 6 - Mature",
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 6.0",
-        "Framework :: Plone :: 6.1",
         "Framework :: Plone :: 6.2",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Programming Language :: Python",
