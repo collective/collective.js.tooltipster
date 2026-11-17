@@ -1,10 +1,10 @@
 graft src/collective
 graft docs
-include *.cfg *.rst *.in
-exclude bootstrap-buildout.py
+include *.cfg *.rst *.in Makefile requirements-*.txt
 exclude .coveragerc
 exclude .gitattributes
 exclude .installed.cfg
 exclude .mr.developer.cfg
 recursive-include docs *.GPL
 recursive-include docs *.rst
+global-exclude *.pyc

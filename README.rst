@@ -1,3 +1,6 @@
+.. image:: https://github.com/collective/collective.js.tooltipster/actions/workflows/meta.yml/badge.svg?branch=master
+    :target: https://github.com/collective/collective.js.tooltipster/actions/workflows/meta.yml
+
 =========================
 collective.js.tooltipster
 =========================
@@ -9,10 +12,9 @@ Version 4.2.6
 Themes
 ****** 
 
-If you want to use additional themes, just import profile "collective.js.tooltipster Themes" in portal_setup.
+The default profile also installs the theme stylesheets (one bundle each):
 
-Following themes are available :
-
+- tooltipster-borderless
 - tooltipster-light
 - tooltipster-noir
 - tooltipster-punk

@@ -1,3 +1,6 @@
+[run]
+source = src/collective/js/tooltipster
+
 [report]
 include =
     src/collective/*
